@@ -1,0 +1,41 @@
+﻿
+global using IApplicabilitySearchDescriptor = F10Y.L0026.T002.IApplicabilitySearchDescriptor;
+global using IDependencySearchDescriptor = F10Y.L0026.T002.IDependencySearchDescriptor;
+global using IDependencySetSearchDescriptor = F10Y.L0026.T002.IDependencySetSearchDescriptor;
+global using IDomainSearchDescriptor = F10Y.L0026.T002.IDomainSearchDescriptor;
+global using IImplementationSchemeSearchDescriptor = F10Y.L0026.T002.IImplementationSchemeSearchDescriptor;
+global using INamingSchemeSearchDescriptor = F10Y.L0026.T002.INamingSchemeSearchDescriptor;
+global using INetVersionSearchDescriptor = F10Y.L0026.T002.INetVersionSearchDescriptor;
+global using IOpinionSearchDescriptor = F10Y.L0026.T002.IOpinionSearchDescriptor;
+global using IOrganizationSearchDescriptor = F10Y.L0026.T002.IOrganizationSearchDescriptor;
+global using ITypingSchemeSearchDescriptor = F10Y.L0026.T002.ITypingSchemeSearchDescriptor;
+global using IVisibilitySearchDescriptor = F10Y.L0026.T002.IVisibilitySearchDescriptor;
+
+global using ApplicabilitySearchDescriptor = F10Y.L0026.T002.ApplicabilitySearchDescriptor;
+global using DependencySearchDescriptor_Constrained = F10Y.L0026.T002.DependencySearchDescriptor_Constrained;
+global using DependencySearchDescriptor_Leaf = F10Y.L0026.T002.DependencySearchDescriptor_Leaf;
+global using DependencySearchDescriptor_Name = F10Y.L0026.T002.DependencySearchDescriptor_Name;
+global using DependencySearchDescriptor_NuGetPackage = F10Y.L0026.T002.DependencySearchDescriptor_NuGetPackage;
+global using DependencySearchDescriptor_Project = F10Y.L0026.T002.DependencySearchDescriptor_Project;
+global using DependencySetSearchDescriptor_Constrained = F10Y.L0026.T002.DependencySetSearchDescriptor_Constrained;
+global using DependencySetSearchDescriptor_DependencySearchDescriptor = F10Y.L0026.T002.DependencySetSearchDescriptor_DependencySearchDescriptor;
+global using DependencySetSearchDescriptor_Leaf = F10Y.L0026.T002.DependencySetSearchDescriptor_Leaf;
+global using DependencySetSearchDescriptor_None = F10Y.L0026.T002.DependencySetSearchDescriptor_None;
+global using DependencySetSearchDescriptor_Unconstrained = F10Y.L0026.T002.DependencySetSearchDescriptor_Unconstrained;
+global using DomainSearchDescriptor = F10Y.L0026.T002.DomainSearchDescriptor;
+global using DomainSearchDescriptor_Set = F10Y.L0026.T002.DomainSearchDescriptor_Set;
+global using ImplementationSchemeSearchDescriptor_Enumeration = F10Y.L0026.T002.ImplementationSchemeSearchDescriptor_Enumeration;
+global using NamingSchemeSearchDescriptor_Enumeration = F10Y.L0026.T002.NamingSchemeSearchDescriptor_Enumeration;
+global using NetVersionSearchDescriptor = F10Y.L0026.T002.NetVersionSearchDescriptor;
+global using OpinionSearchDescriptor = F10Y.L0026.T002.OpinionSearchDescriptor;
+global using OrganizationSearchDescriptor_Name = F10Y.L0026.T002.OrganizationSearchDescriptor_Name;
+global using TypingSchemeSearchDescriptor_Enumeration = F10Y.L0026.T002.TypingSchemeSearchDescriptor_Enumeration;
+global using VisibilitySearchDescriptor = F10Y.L0026.T002.VisibilitySearchDescriptor;
+
+global using Serialization_DependencySetSearchDescriptor_DependencySearchDescriptor = F10Y.L0026.T002.Serialization.DependencySetSearchDescriptor_DependencySearchDescriptor;
+global using Serialization_DomainSearchDescriptor_Set = F10Y.L0026.T002.Serialization.DomainSearchDescriptor_Set;
+global using Serialization_ImplementationSchemeSearchDescriptor_Enumeration = F10Y.L0026.T002.Serialization.ImplementationSchemeSearchDescriptor_Enumeration;
+global using Serialization_NamingSchemeSearchDescriptor_Enumeration = F10Y.L0026.T002.Serialization.NamingSchemeSearchDescriptor_Enumeration;
+global using Serialization_OrganizationSearchDescriptor_Name = F10Y.L0026.T002.Serialization.OrganizationSearchDescriptor_Name;
+global using Serialization_TypingSchemeSearchDescriptor_Enumeration = F10Y.L0026.T002.Serialization.TypingSchemeSearchDescriptor_Enumeration;
+global using Serialization_VisibilitySearchDescriptor = F10Y.L0026.T002.Serialization.VisibilitySearchDescriptor;

@@ -1,0 +1,79 @@
+{
+  "TypeName": "D8S.S0015.L000.InstanceSetDescriptor",
+  "Value": {
+    "Descriptor": {
+      "TypeName": "D8S.S0015.L000.Descriptor",
+      "Value": {
+        "Identity": "87f330df-61f2-4676-8b86-f36b9b62fdd5",
+        "Name": "F10Y.L0026",
+        "Description": "Instance set machinery library."
+      }
+    },
+    "InstanceSetTypeDescriptor": {
+      "TypeName": "D8S.S0015.L000.InstanceSetTypeDescriptor_Name",
+      "Value": {
+        "InstanceSetType_Name": "Domain-Specific Library"
+      }
+    },
+    "VarietyDescriptor": {
+      "TypeName": "D8S.S0015.L000.InstanceVarietyDescriptor_Name_Set",
+      "Value": {
+        "InstanceVariety_Names": [
+          "Documentations",
+          "HasXs",
+          "WithXs",
+          "DataTypes",
+          "UtilityTypes",
+          "Values",
+          "Functions"
+        ]
+      }
+    },
+    "OrganizationDescriptor": {
+      "TypeName": "D8S.S0015.L000.OrganizationDescriptor_Name",
+      "Value": {
+        "Organization_Name": "F10Y"
+      }
+    },
+    "VisibilityDescriptor": {
+      "TypeName": "D8S.S0015.L000.VisibilityDescriptor",
+      "Value": {
+        "Visibility": "Public"
+      }
+    },
+    "NetVersionDescriptor": {
+      "TypeName": "D8S.S0015.L000.NetVersionDescriptor",
+      "Value": {
+        "TargetFrameworkMoniker": "net8.0"
+      }
+    },
+    "DependencySetDescriptor": {
+      "TypeName": "D8S.S0015.L000.DependencySetDescriptor_Unconstrained",
+      "Value": {}
+    },
+    "ApplicabilityDescriptor": {
+      "TypeName": "D8S.S0015.L000.ApplicabilityDescriptor",
+      "Value": {
+        "Applicability": "General"
+      }
+    },
+    "DomainDescriptor": {
+      "TypeName": "D8S.S0015.L000.DomainDescriptor_Set",
+      "Value": {
+        "Domains": [
+          "Instance Set Machinery",
+          "Instance Set Search Machinery"
+        ]
+      }
+    },
+    "OpinionDescriptor": {
+      "TypeName": "D8S.S0015.L000.OpinionDescriptor_Set",
+      "Value": {
+        "Opinions": [
+          "Unopinionated",
+          "IHasX/IWithX Based"
+        ]
+      }
+    }
+  }
+}

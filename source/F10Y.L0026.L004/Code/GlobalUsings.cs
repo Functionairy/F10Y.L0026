@@ -1,0 +1,75 @@
+﻿global using For_Bases_IDescriptorTextOperator = F10Y.L0062.L002.Bases;
+global using For_Bases_IPredicateOperator = F10Y.L0062.L002.Bases;
+global using For_DescriptorTextOperationHandlerSuite = F10Y.L0062.L002;
+global using For_EqualityOperationDescriptor = F10Y.L0062.L002.T000;
+global using For_PredicateProviderSuite = F10Y.L0062.L002;
+global using For_TypeSpecifiers = F10Y.L0001;
+
+global using IDescriptor = F10Y.L0062.L002.T000.IDescriptor;
+global using IImplementationSchemeSearchDescriptor = F10Y.L0026.T002.IImplementationSchemeSearchDescriptor;
+global using IInstanceSetDescriptor = F10Y.L0026.T003.IInstanceSetDescriptor;
+global using IInstanceSetSearchDescriptor = F10Y.L0026.T004.IInstanceSetSearchDescriptor;
+global using IInstanceSetTypeDescriptor = F10Y.L0026.T003.IInstanceSetTypeDescriptor;
+global using IInstanceSetTypeSearchDescriptor = F10Y.L0026.T004.IInstanceSetTypeSearchDescriptor;
+global using IInstanceVarietyDescriptor = F10Y.L0026.T003.IInstanceVarietyDescriptor;
+global using IInstanceVarietySearchDescriptor = F10Y.L0026.T004.IInstanceVarietySearchDescriptor;
+global using INamingSchemeSearchDescriptor = F10Y.L0026.T002.INamingSchemeSearchDescriptor;
+global using ITypingSchemeSearchDescriptor = F10Y.L0026.T002.ITypingSchemeSearchDescriptor;
+
+global using IHas_ApplicabilityDescriptor = F10Y.L0026.T001.IHas_ApplicabilityDescriptor;
+global using IHas_Descriptor = F10Y.L0062.L002.T000.IHas_Descriptor;
+global using IHas_DependencySetDescriptor = F10Y.L0026.T001.IHas_DependencySetDescriptor;
+global using IHas_DomainDescriptor = F10Y.L0026.T001.IHas_DomainDescriptor;
+global using IHas_InstanceSetTypeDescriptor = F10Y.L0026.T003.IHas_InstanceSetTypeDescriptor;
+global using IHas_InstanceSetTypeName = F10Y.L0026.T003.IHas_InstanceSetTypeName;
+global using IHas_InstanceVarietyDescriptor = F10Y.L0026.T003.IHas_InstanceVarietyDescriptor;
+global using IHas_InstanceVarietyName = F10Y.L0026.T003.IHas_InstanceVarietyName;
+global using IHas_InstanceVarietyNames = F10Y.L0026.T003.IHas_InstanceVarietyNames;
+global using IHas_NetVersionDescriptor = F10Y.L0026.T001.IHas_NetVersionDescriptor;
+global using IHas_OrganizationDescriptor = F10Y.L0026.T001.IHas_OrganizationDescriptor;
+global using IHas_OpinionDescriptor = F10Y.L0026.T001.IHas_OpinionDescriptor;
+global using IHas_VisibilityDescriptor = F10Y.L0026.T001.IHas_VisibilityDescriptor;
+
+global using InstanceSetDescriptor = F10Y.L0026.T003.InstanceSetDescriptor;
+global using InstanceSetSearchDescriptor = F10Y.L0026.T004.InstanceSetSearchDescriptor;
+global using InstanceSetSearchDescriptor_Aggregate = F10Y.L0026.T004.InstanceSetSearchDescriptor_Aggregate;
+global using InstanceSetSearchDescriptor_ApplicabilitySearchDescriptor = F10Y.L0026.T004.InstanceSetSearchDescriptor_ApplicabilitySearchDescriptor;
+global using InstanceSetSearchDescriptor_DependencySetSearchDescriptor = F10Y.L0026.T004.InstanceSetSearchDescriptor_DependencySetSearchDescriptor;
+global using InstanceSetSearchDescriptor_DomainSearchDescriptor = F10Y.L0026.T004.InstanceSetSearchDescriptor_DomainSearchDescriptor;
+global using InstanceSetSearchDescriptor_InstanceSetDescriptor = F10Y.L0026.T004.InstanceSetSearchDescriptor_InstanceSetDescriptor;
+global using InstanceSetSearchDescriptor_InstanceSetTypeSearchDescriptor = F10Y.L0026.T004.InstanceSetSearchDescriptor_InstanceSetTypeSearchDescriptor;
+global using InstanceSetSearchDescriptor_InstanceVarietySearchDescriptor = F10Y.L0026.T004.InstanceSetSearchDescriptor_InstanceVarietySearchDescriptor;
+global using InstanceSetSearchDescriptor_NetVersionSearchDescriptor = F10Y.L0026.T004.InstanceSetSearchDescriptor_NetVersionSearchDescriptor;
+global using InstanceSetSearchDescriptor_OpinionSearchDescriptor = F10Y.L0026.T004.InstanceSetSearchDescriptor_OpinionSearchDescriptor;
+global using InstanceSetSearchDescriptor_OrganizationName = F10Y.L0026.T004.InstanceSetSearchDescriptor_OrganizationName;
+global using InstanceSetSearchDescriptor_OrganizationSearchDescriptor = F10Y.L0026.T004.InstanceSetSearchDescriptor_OrganizationSearchDescriptor;
+global using InstanceSetSearchDescriptor_VisibilitySearchDescriptor = F10Y.L0026.T004.InstanceSetSearchDescriptor_VisibilitySearchDescriptor;
+global using InstanceSetTypeSearchDescriptor_Name = F10Y.L0026.T004.InstanceSetTypeSearchDescriptor_Name;
+global using InstanceVarietyDescriptor_All = F10Y.L0026.T003.InstanceVarietyDescriptor_All;
+global using InstanceVarietyDescriptor_Values = F10Y.L0026.T003.InstanceVarietyDescriptor_Values;
+global using InstanceVarietySearchDescriptor_Name = F10Y.L0026.T004.InstanceVarietySearchDescriptor_Name;
+global using InstanceVarietySearchDescriptor_Values = F10Y.L0026.T004.InstanceVarietySearchDescriptor_Values;
+
+global using N001_InstanceSetSearchDescriptor_Aggregate = F10Y.L0026.T004.N001.InstanceSetSearchDescriptor_Aggregate;
+global using N002_InstanceSetSearchDescriptor_Aggregate = F10Y.L0026.T004.N002.InstanceSetSearchDescriptor_Aggregate;
+
+global using N001_Serialization_InstanceSetSearchDescriptor_Aggregate = F10Y.L0026.T004.N001.Serialization.InstanceSetSearchDescriptor_Aggregate;
+global using N002_Serialization_InstanceSetSearchDescriptor_Aggregate = F10Y.L0026.T004.N002.Serialization.InstanceSetSearchDescriptor_Aggregate;
+
+global using Serialization_InstanceSetSearchDescriptor = F10Y.L0026.T004.Serialization.InstanceSetSearchDescriptor;
+global using Serialization_InstanceSetSearchDescriptor_Aggregate = F10Y.L0026.T004.Serialization.InstanceSetSearchDescriptor_Aggregate;
+global using Serialization_InstanceSetSearchDescriptor_ApplicabilitySearchDescriptor = F10Y.L0026.T004.Serialization.InstanceSetSearchDescriptor_ApplicabilitySearchDescriptor;
+global using Serialization_InstanceSetSearchDescriptor_DependencySetSearchDescriptor = F10Y.L0026.T004.Serialization.InstanceSetSearchDescriptor_DependencySetSearchDescriptor;
+global using Serialization_InstanceSetSearchDescriptor_DomainSearchDescriptor = F10Y.L0026.T004.Serialization.InstanceSetSearchDescriptor_DomainSearchDescriptor;
+global using Serialization_InstanceSetSearchDescriptor_InstanceSetTypeSearchDescriptor = F10Y.L0026.T004.Serialization.InstanceSetSearchDescriptor_InstanceSetTypeSearchDescriptor;
+global using Serialization_InstanceSetSearchDescriptor_InstanceVarietySearchDescriptor = F10Y.L0026.T004.Serialization.InstanceSetSearchDescriptor_InstanceVarietySearchDescriptor;
+global using Serialization_InstanceSetSearchDescriptor_OpinionSearchDescriptor = F10Y.L0026.T004.Serialization.InstanceSetSearchDescriptor_OpinionSearchDescriptor;
+global using Serialization_InstanceSetSearchDescriptor_OrganizationSearchDescriptor = F10Y.L0026.T004.Serialization.InstanceSetSearchDescriptor_OrganizationSearchDescriptor;
+global using Serialization_InstanceSetTypeSearchDescriptor_Name = F10Y.L0026.T004.Serialization.InstanceSetTypeSearchDescriptor_Name;
+global using Serialization_InstanceSetSearchDescriptor_VisibilitySearchDescriptor = F10Y.L0026.T004.Serialization.InstanceSetSearchDescriptor_VisibilitySearchDescriptor;
+global using Serialization_InstanceVarietySearchDescriptor_Name = F10Y.L0026.T004.Serialization.InstanceVarietySearchDescriptor_Name;
+global using Serialization_InstanceSetSearchDescriptor_NetVersionSearchDescriptor = F10Y.L0026.T004.Serialization.InstanceSetSearchDescriptor_NetVersionSearchDescriptor;
+global using Serialization_InstanceVarietySearchDescriptor_Values = F10Y.L0026.T004.Serialization.InstanceVarietySearchDescriptor_Values;
+
+
+global using Documentation_Common = F10Y.Y0000.Documentation;
