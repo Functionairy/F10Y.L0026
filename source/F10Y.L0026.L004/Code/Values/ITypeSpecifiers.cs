@@ -25,6 +25,9 @@ namespace F10Y.L0026.L004
         public For_TypeSpecifiers.TypeSpecifier<IInstanceSetSearchDescriptor, InstanceSetSearchDescriptor_ApplicabilitySearchDescriptor> For_InstanceSetSearchDescriptor_ApplicabilitySearchDescriptor =>
            For_TypeSpecifiers.TypeSpecifier<IInstanceSetSearchDescriptor, InstanceSetSearchDescriptor_ApplicabilitySearchDescriptor>.Instance;
 
+        public For_TypeSpecifiers.TypeSpecifier<IInstanceSetSearchDescriptor, InstanceSetSearchDescriptor_DescriptorSearchDescriptor> For_InstanceSetSearchDescriptor_DescriptorSearchDescriptor =>
+           For_TypeSpecifiers.TypeSpecifier<IInstanceSetSearchDescriptor, InstanceSetSearchDescriptor_DescriptorSearchDescriptor>.Instance;
+
         public For_TypeSpecifiers.TypeSpecifier<IInstanceSetSearchDescriptor, InstanceSetSearchDescriptor_DependencySetSearchDescriptor> For_InstanceSetSearchDescriptor_DependencySetSearchDescriptor =>
            For_TypeSpecifiers.TypeSpecifier<IInstanceSetSearchDescriptor, InstanceSetSearchDescriptor_DependencySetSearchDescriptor>.Instance;
 

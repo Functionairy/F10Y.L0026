@@ -11,11 +11,14 @@ namespace F10Y.L0026.T003
         IEquatable<InstanceSetLocationDescriptor>,
         IInstanceSetLocationDescriptor,
         IWith_InstanceSetDescriptor,
+        IWith_LastModified,
         IWith_LocationDescriptor
     {
         public IInstanceSetDescriptor InstanceSetDescriptor { get; set; }
 
         public ILocationDescriptor LocationDescriptor { get; set; }
+
+        public DateTime LastModified { get; set; }
 
 
         public override bool Equals(object obj)

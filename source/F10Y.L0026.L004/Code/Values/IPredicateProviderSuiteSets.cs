@@ -27,6 +27,7 @@ namespace F10Y.L0026.L004
             _PredicateProviderOperationHandlerSuites.For_InstanceSetSearchDescriptor_Aggregate_N002,
             _PredicateProviderOperationHandlerSuites.For_InstanceSetSearchDescriptor_ApplicabilitySearchDescriptor,
             _PredicateProviderOperationHandlerSuites.For_InstanceSetSearchDescriptor_DependencySetSearchDescriptor,
+            _PredicateProviderOperationHandlerSuites.For_InstanceSetSearchDescriptor_DescriptorSearchDescriptor,
             _PredicateProviderOperationHandlerSuites.For_InstanceSetSearchDescriptor_DomainSearchDescriptor,
             //_PredicateProviderOperationHandlerSuites.For_InstanceSetSearchDescriptor_InstanceSetDescriptor,
             _PredicateProviderOperationHandlerSuites.For_InstanceSetSearchDescriptor_InstanceSetTypeSearchDescriptor,

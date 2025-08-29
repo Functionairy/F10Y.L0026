@@ -129,6 +129,23 @@ namespace F10Y.L0026.L004
                 Instances.TypeSpecifiers.For_InstanceSetSearchDescriptor_DomainSearchDescriptor)
         };
 
+        public For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<IInstanceSetSearchDescriptor> For_InstanceSetSearchDescriptor_DescriptorSearchDescriptor => new()
+        {
+            Type = Instances.TypeOperator.Get_Type<InstanceSetSearchDescriptor_DescriptorSearchDescriptor>(),
+            To_Text = Instances.TypeOperator.Get_Operator_WithInputTypeVerified(
+                Instances.InstanceSetSearchDescriptorOperator.To_Text,
+                Instances.TypeSpecifiers.For_InstanceSetSearchDescriptor_DescriptorSearchDescriptor),
+            To_Text_ContentOnly = Instances.TypeOperator.Get_Operator_WithInputTypeVerified(
+                Instances.InstanceSetSearchDescriptorOperator.To_Text_ContentOnly,
+                Instances.TypeSpecifiers.For_InstanceSetSearchDescriptor_DescriptorSearchDescriptor),
+            From_JsonElement = Instances.JsonElementOperator.Get_Deserialize<InstanceSetSearchDescriptor_DescriptorSearchDescriptor, Serialization_InstanceSetSearchDescriptor_DescriptorSearchDescriptor>(
+                Instances.InstanceSetSearchDescriptorOperator.From_SerializationType),
+            To_JsonElement = Instances.TypeOperator.Get_Operator_WithInputTypeVerified(
+                Instances.JsonElementOperator.Get_Serialize<InstanceSetSearchDescriptor_DescriptorSearchDescriptor, Serialization_InstanceSetSearchDescriptor_DescriptorSearchDescriptor>(
+                    Instances.InstanceSetSearchDescriptorOperator.To_SerializationType),
+                Instances.TypeSpecifiers.For_InstanceSetSearchDescriptor_DescriptorSearchDescriptor)
+        };
+
         public For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<IInstanceSetSearchDescriptor> For_InstanceSetSearchDescriptor_InstanceSetTypeSearchDescriptor => new()
         {
             Type = Instances.TypeOperator.Get_Type<InstanceSetSearchDescriptor_InstanceSetTypeSearchDescriptor>(),

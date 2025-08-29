@@ -26,6 +26,7 @@ namespace F10Y.L0026.L004
             _DescriptorTextOperationHandlerSuites.For_InstanceSetSearchDescriptor_Aggregate_N002,
             _DescriptorTextOperationHandlerSuites.For_InstanceSetSearchDescriptor_ApplicabilitySearchDescriptor,
             _DescriptorTextOperationHandlerSuites.For_InstanceSetSearchDescriptor_DependencySetSearchDescriptor,
+            _DescriptorTextOperationHandlerSuites.For_InstanceSetSearchDescriptor_DescriptorSearchDescriptor,
             _DescriptorTextOperationHandlerSuites.For_InstanceSetSearchDescriptor_DomainSearchDescriptor,
             _DescriptorTextOperationHandlerSuites.For_InstanceSetSearchDescriptor_InstanceSetTypeSearchDescriptor,
             _DescriptorTextOperationHandlerSuites.For_InstanceSetSearchDescriptor_InstanceVarietySearchDescriptor,

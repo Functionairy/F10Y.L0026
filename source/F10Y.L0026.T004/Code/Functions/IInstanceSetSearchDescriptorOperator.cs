@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 using F10Y.T0002;
 
@@ -20,6 +22,13 @@ namespace F10Y.L0026.T004
 
             return output;
         }
+
+        public InstanceSetSearchDescriptor_Aggregate From(
+            IDescriptor descriptor,
+            IEnumerable<IInstanceSetSearchDescriptor> instanceSetSearchDescriptors)
+            => this.From(
+                descriptor,
+                instanceSetSearchDescriptors.ToArray());
 
         public InstanceSetSearchDescriptor_Aggregate From(
             IDescriptor descriptor,

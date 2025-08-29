@@ -54,6 +54,15 @@ namespace F10Y.L0026.L004
             //Predicate_Asynchronous = ,
         };
 
+        public For_PredicateProviderSuite.PredicateProviderSuite<IInstanceSetSearchDescriptor, IInstanceSetDescriptor> For_InstanceSetSearchDescriptor_DescriptorSearchDescriptor => new()
+        {
+            Type = Instances.TypeOperator.Get_Type<InstanceSetSearchDescriptor_DescriptorSearchDescriptor>(),
+            Get_PredicateProvider_Synchronous = Instances.TypeOperator.Get_Operator_WithInputTypeVerified(
+                Instances.InstanceSetSearchDescriptorOperator.Get_PredicateFor,
+                Instances.TypeSpecifiers.For_InstanceSetSearchDescriptor_DescriptorSearchDescriptor),
+            //Predicate_Asynchronous = ,
+        };
+
         public For_PredicateProviderSuite.PredicateProviderSuite<IInstanceSetSearchDescriptor, IInstanceSetDescriptor> For_InstanceSetSearchDescriptor_DomainSearchDescriptor => new()
         {
             Type = Instances.TypeOperator.Get_Type<InstanceSetSearchDescriptor_DomainSearchDescriptor>(),
@@ -62,6 +71,17 @@ namespace F10Y.L0026.L004
                 Instances.TypeSpecifiers.For_InstanceSetSearchDescriptor_DomainSearchDescriptor),
             //Predicate_Asynchronous = ,
         };
+
+
+        //public For_PredicateProviderSuite.PredicateProviderSuite<IInstanceSetSearchDescriptor, IInstanceSetDescriptor> For_InstanceSetSearchDescriptor_InstanceSetDescriptor => new()
+        //{
+        //    Type = Instances.TypeOperator.Get_Type<InstanceSetSearchDescriptor_InstanceSetDescriptor>(),
+        //    Get_PredicateProvider_Synchronous = Instances.TypeOperator.Get_Operator_WithInputTypeVerified(
+        //        Instances.InstanceSetSearchDescriptorOperator.Get_PredicateFor,
+        //        Instances.TypeSpecifiers.For_InstanceSetSearchDescriptor_InstanceSetDescriptor),
+        //    //Predicate_Asynchronous = ,
+        //};
+
 
         public For_PredicateProviderSuite.PredicateProviderSuite<IInstanceSetSearchDescriptor, IInstanceSetDescriptor> For_InstanceSetSearchDescriptor_InstanceSetTypeSearchDescriptor => new()
         {

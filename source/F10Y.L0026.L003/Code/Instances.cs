@@ -6,6 +6,7 @@ namespace F10Y.L0026.L003
     public static class Instances
     {
         public static L001.IApplicabilityDescriptorOperator ApplicabilityDescriptorOperator => L001.ApplicabilityDescriptorOperator.Instance;
+        public static L0001.L000.IDateTimeOperator DateTimeOperator => L0001.L000.DateTimeOperator.Instance;
         public static L0062.L002.IDescriptorOperator DescriptorOperator => L0062.L002.DescriptorOperator.Instance;
         public static IDescriptorTextOperationHandlerSuites DescriptorTextOperationHandlerSuites => L003.DescriptorTextOperationHandlerSuites.Instance;
         public static IDescriptorTextOperationHandlerSuiteSets DescriptorTextOperationHandlerSuiteSets => L003.DescriptorTextOperationHandlerSuiteSets.Instance;

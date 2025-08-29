@@ -10,6 +10,7 @@ namespace F10Y.L0026.L004
         public static L0000.IArrayOperator ArrayOperator => L0000.ArrayOperator.Instance;
         public static L002.IDependencySetSearchDescriptorOperator DependencySetSearchDescriptorOperator => L002.DependencySetSearchDescriptorOperator.Instance;
         public static L0062.L002.IDescriptorOperator DescriptorOperator => L0062.L002.DescriptorOperator.Instance;
+        public static L0062.L003.IDescriptorSearchDescriptorOperator DescriptorSearchDescriptorOperator => L0062.L003.DescriptorSearchDescriptorOperator.Instance;
         public static IDescriptorTextOperationHandlerSuites DescriptorTextOperationHandlerSuites => L004.DescriptorTextOperationHandlerSuites.Instance;
         public static IDescriptorTextOperationHandlerSuiteSets DescriptorTextOperationHandlerSuiteSets => L004.DescriptorTextOperationHandlerSuiteSets.Instance;
         public static L002.IDomainSearchDescriptorOperator DomainSearchDescriptorOperator => L002.DomainSearchDescriptorOperator.Instance;

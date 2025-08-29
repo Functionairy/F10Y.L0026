@@ -19,6 +19,7 @@ global using IHas_ApplicabilityDescriptor = F10Y.L0026.T001.IHas_ApplicabilityDe
 global using IHas_DependencySetDescriptor = F10Y.L0026.T001.IHas_DependencySetDescriptor;
 global using IHas_Descriptor = F10Y.L0062.L002.T000.IHas_Descriptor;
 global using IHas_DomainDescriptor = F10Y.L0026.T001.IHas_DomainDescriptor;
+global using IHas_LastModified = F10Y.L0005.T001.IHas_LastModified;
 global using IHas_LocationDescriptor = F10Y.L0026.T001.IHas_LocationDescriptor;
 global using IHas_NetVersionDescriptor = F10Y.L0026.T001.IHas_NetVersionDescriptor;
 global using IHas_OpinionDescriptor = F10Y.L0026.T001.IHas_OpinionDescriptor;
@@ -29,6 +30,7 @@ global using IWith_ApplicabilityDescriptor = F10Y.L0026.T001.IWith_Applicability
 global using IWith_DependencySetDescriptor = F10Y.L0026.T001.IWith_DependencySetDescriptor;
 global using IWith_Descriptor = F10Y.L0062.L002.T000.IWith_Descriptor;
 global using IWith_DomainDescriptor = F10Y.L0026.T001.IWith_DomainDescriptor;
+global using IWith_LastModified = F10Y.L0005.T001.IWith_LastModified;
 global using IWith_LocationDescriptor = F10Y.L0026.T001.IWith_LocationDescriptor;
 
 global using IWith_NetVersionDescriptor = F10Y.L0026.T001.IWith_NetVersionDescriptor;

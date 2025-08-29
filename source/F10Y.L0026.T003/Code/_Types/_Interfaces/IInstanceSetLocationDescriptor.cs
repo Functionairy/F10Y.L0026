@@ -11,6 +11,7 @@ namespace F10Y.L0026.T003
     [DataTypeMarker]
     public interface IInstanceSetLocationDescriptor :
         IHas_InstanceSetDescriptor,
+        IHas_LastModified,
         IHas_LocationDescriptor
     {
         /// <summary>

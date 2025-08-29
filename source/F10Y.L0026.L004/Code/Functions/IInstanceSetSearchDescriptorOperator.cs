@@ -1038,6 +1038,22 @@ namespace F10Y.L0026.L004
             return output;
         }
 
+        //public Func<IInstanceSetDescriptor, bool> Get_PredicateFor(InstanceSetSearchDescriptor_InstanceSetDescriptor searchDescriptor)
+        //{
+        //    // Configure the predicate builder.
+        //    var predicateBuilder = new Synchronous.InstanceSetDescriptorPredicateBuilder();
+
+        //    Instances.InstanceSetDescriptorPredicateBuilderOperator.Reset_Accept_All(predicateBuilder);
+
+        //    Instances.InstanceSetDescriptorPredicateBuilderOperator.Configure_WithDefaults(
+        //        predicateBuilder,
+        //        searchDescriptor.InstanceSetDescriptor);
+
+        //    // Build the predicate.
+        //    var output = Instances.InstanceSetDescriptorPredicateBuilderOperator.Build_Predicate(predicateBuilder);
+        //    return output;
+        //}
+
         public Func<IInstanceSetDescriptor, bool> Get_PredicateFor(InstanceSetSearchDescriptor_InstanceSetTypeSearchDescriptor searchDescriptor)
         {
             bool Internal(IInstanceSetDescriptor instanceSetDescriptor)
@@ -1218,6 +1234,28 @@ namespace F10Y.L0026.L004
             return Internal;
         }
 
+        public Func<IInstanceSetDescriptor, bool> Get_PredicateFor(InstanceSetSearchDescriptor_DescriptorSearchDescriptor searchDescriptor)
+        {
+            bool Internal(IInstanceSetDescriptor instanceSetDescriptor)
+            {
+                // Note: the is-operator returns false for null values.
+                var output = Instances.PredicateOperator.If_TypeIs_Else<IHas_Descriptor>(
+                    instanceSetDescriptor,
+                    has_FacetDescriptor =>
+                    {
+                        var predicate = Instances.DescriptorSearchDescriptorOperator.Get_Predicate_Synchronous(searchDescriptor.DescriptorSearchDescriptor);
+
+                        var output = predicate(has_FacetDescriptor.Descriptor);
+                        return output;
+                    },
+                    searchDescriptor.Value_IfMissingDescriptor);
+
+                return output;
+            }
+
+            return Internal;
+        }
+
         public Func<IInstanceSetDescriptor, bool> Get_PredicateFor(InstanceSetSearchDescriptor_ApplicabilitySearchDescriptor searchDescriptor)
         {
             bool Internal(IInstanceSetDescriptor instanceSetDescriptor)
@@ -1304,6 +1342,73 @@ namespace F10Y.L0026.L004
             }
 
             return Internal;
+        }
+
+        public InstanceSetSearchDescriptor_DescriptorSearchDescriptor From_SerializationType(Serialization_InstanceSetSearchDescriptor_DescriptorSearchDescriptor instanceSetSearchDescriptor)
+        {
+            var descriptor = Instances.DescriptorOperator.From_JsonSerializationObject(instanceSetSearchDescriptor.Descriptor);
+
+            var descriptorSearchDescriptor = Instances.DescriptorSearchDescriptorOperator.From_JsonSerializationObject(instanceSetSearchDescriptor.DescriptorSearchDescriptor);
+
+            var output = new InstanceSetSearchDescriptor_DescriptorSearchDescriptor
+            {
+                Descriptor = descriptor,
+
+                Value_IfMissingDescriptor = instanceSetSearchDescriptor.Value_IfMissingDescriptor,
+                DescriptorSearchDescriptor = descriptorSearchDescriptor,
+            };
+
+            return output;
+        }
+
+        public Serialization_InstanceSetSearchDescriptor_DescriptorSearchDescriptor To_SerializationType(InstanceSetSearchDescriptor_DescriptorSearchDescriptor instanceSetSearchDescriptor)
+        {
+            var descriptor = Instances.DescriptorOperator.To_JsonSerializationObject(instanceSetSearchDescriptor.Descriptor);
+
+            var descriptorSearchDescriptor = Instances.DescriptorSearchDescriptorOperator.To_JsonSerializationObject(instanceSetSearchDescriptor.DescriptorSearchDescriptor);
+
+            var output = new Serialization_InstanceSetSearchDescriptor_DescriptorSearchDescriptor
+            {
+                Descriptor = descriptor,
+
+                Value_IfMissingDescriptor = instanceSetSearchDescriptor.Value_IfMissingDescriptor,
+                DescriptorSearchDescriptor = descriptorSearchDescriptor,
+            };
+
+            return output;
+        }
+
+        public IEnumerable<string> To_Text_ContentOnly(InstanceSetSearchDescriptor_DescriptorSearchDescriptor instanceSetSearchDescriptor)
+        {
+            var descriptor_Lines = Instances.DescriptorOperator.To_Text_ContentOnly_Noexceptive(instanceSetSearchDescriptor.Descriptor);
+
+            var descriptorSearch_Lines = Instances.DescriptorSearchDescriptorOperator.To_Text_ContentOnly_Noexceptive(instanceSetSearchDescriptor.DescriptorSearchDescriptor);
+
+            var output = Instances.EnumerableOperator.From(
+                Instances.EnumerableOperator.From("Descriptor:")
+                    .Append_Many(descriptor_Lines.Entab())
+                    ,
+                Instances.EnumerableOperator.From($"{instanceSetSearchDescriptor.Value_IfMissingDescriptor}: value, if instance set missing instance variety descriptor facet")
+                    ,
+                Instances.EnumerableOperator.From("Descriptor Search:")
+                    .Append_Many(descriptorSearch_Lines.Entab())
+                )
+                ;
+
+            return output;
+        }
+
+        public IEnumerable<string> To_Text(InstanceSetSearchDescriptor_DescriptorSearchDescriptor instanceSetSearchDescriptor)
+        {
+            var lines_ForContent = this.To_Text_ContentOnly(instanceSetSearchDescriptor);
+
+            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetSearchDescriptor);
+
+            var output = Instances.EnumerableOperator.From($"Instance Set Search Descriptor ({typeName})")
+                .Append_Many(lines_ForContent.Entab())
+                ;
+
+            return output;
         }
     }
 }

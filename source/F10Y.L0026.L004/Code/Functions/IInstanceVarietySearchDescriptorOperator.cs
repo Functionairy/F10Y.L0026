@@ -192,14 +192,14 @@ namespace F10Y.L0026.L004
                 descriptor);
 
         /// <summary>
-        /// Uses <see cref="IEqualityOperationDescriptors.For_String_Simple"/>.
+        /// Uses <see cref="F10Y.L0062.L002.T000.IEqualityOperationDescriptors.Simple"/>.
         /// </summary>
         public InstanceVarietySearchDescriptor_Name From(
             string instanceVariety_Name,
             bool includeAll = false)
             => this.From(
                 instanceVariety_Name,
-                Instances.EqualityOperationDescriptors.For_String_Simple,
+                Instances.EqualityOperationDescriptors.Simple,
                 includeAll);
 
         public InstanceVarietySearchDescriptor_Values From_SerializationType(Serialization_InstanceVarietySearchDescriptor_Values instanceVarietySearchDescriptor)

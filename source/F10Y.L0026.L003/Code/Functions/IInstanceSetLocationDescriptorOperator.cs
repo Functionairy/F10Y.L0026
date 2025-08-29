@@ -65,11 +65,13 @@ namespace F10Y.L0026.L003
             var instanceSet_Lines = Instances.InstanceSetDescriptorOperator.To_Text_ContentOnly_Noexceptive(instanceSetLocationDescriptor.InstanceSetDescriptor);
             var location_Lines = Instances.LocationDescriptorOperator.To_Text_ContentOnly_Noexceptive(instanceSetLocationDescriptor.LocationDescriptor);
 
-            var output = Instances.EnumerableOperator.From(
-                Instances.EnumerableOperator.From("Instance Set:")
+            var lastModified = Instances.DateTimeOperator.To_String_YYYY_MM_DD(instanceSetLocationDescriptor.LastModified);
+
+            var output = Instances.EnumerableOperator.From($"{lastModified}: last-modified")
+                .Append_Many(Instances.EnumerableOperator.From("Instance Set:")
                     .Append_Many(instanceSet_Lines.Entab())
-                    ,
-                Instances.EnumerableOperator.From("Location:")
+                )
+                .Append_Many(Instances.EnumerableOperator.From("Location:")
                     .Append_Many(location_Lines.Entab())
                 )
                 ;
