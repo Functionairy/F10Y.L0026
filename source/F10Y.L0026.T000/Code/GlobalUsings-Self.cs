@@ -1,5 +1,6 @@
 ﻿
 global using IHas_Applicability = F10Y.L0026.T000.IHas_Applicability;
+global using IHas_AssemblyFilePath = F10Y.L0026.T000.IHas_AssemblyFilePath;
 global using IHas_ContextName = F10Y.L0026.T000.IHas_ContextName;
 global using IHas_Domain = F10Y.L0026.T000.IHas_Domain;
 global using IHas_Domains = F10Y.L0026.T000.IHas_Domains;
@@ -12,9 +13,11 @@ global using IHas_Opinions = F10Y.L0026.T000.IHas_Opinions;
 global using IHas_OrganizationName = F10Y.L0026.T000.IHas_OrganizationName;
 global using IHas_RepositoryUrl = F10Y.L0026.T000.IHas_RepositoryUrl;
 global using IHas_TypingScheme = F10Y.L0026.T000.IHas_TypingScheme;
-global using IHas_Version = F10Y.L0026.T000.N001.IHas_Version;
+global using IHas_Version_AsString = F10Y.L0026.T000.N001.IHas_Version;
+global using IHas_Version_AsVersion = F10Y.L0026.T000.N000.IHas_Version;
 
 global using IWith_Applicability = F10Y.L0026.T000.IWith_Applicability;
+global using IWith_AssemblyFilePath = F10Y.L0026.T000.IWith_AssemblyFilePath;
 global using IWith_ContextName = F10Y.L0026.T000.IWith_ContextName;
 global using IWith_Domain = F10Y.L0026.T000.IWith_Domain;
 global using IWith_Domains = F10Y.L0026.T000.IWith_Domains;
@@ -27,6 +30,7 @@ global using IWith_ProjectFilePath = F10Y.L0026.T000.IWith_ProjectFilePath;
 global using IWith_RepositoryUrl = F10Y.L0026.T000.IWith_RepositoryUrl;
 global using IWith_TypingScheme = F10Y.L0026.T000.IWith_TypingScheme;
 global using IWith_Version_AsString = F10Y.L0026.T000.N001.IWith_Version;
+global using IWith_Version_AsVersion = F10Y.L0026.T000.N000.IWith_Version;
 
 global using ImplementationScheme = F10Y.L0026.T000.ImplementationScheme;
 global using NamingScheme = F10Y.L0026.T000.NamingScheme;

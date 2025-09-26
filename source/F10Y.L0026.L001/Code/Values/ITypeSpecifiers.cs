@@ -1,5 +1,6 @@
 using System;
 
+using F10Y.L0026.T001;
 using F10Y.T0003;
 
 
@@ -90,8 +91,14 @@ namespace F10Y.L0026.L001
         public For_TypeSpecifiers.TypeSpecifier<ILocationDescriptor, LocationDescriptor_Aggregate> For_LocationDescriptor_Aggregate =>
             For_TypeSpecifiers.TypeSpecifier<ILocationDescriptor, LocationDescriptor_Aggregate>.Instance;
 
+        public For_TypeSpecifiers.TypeSpecifier<ILocationDescriptor, LocationDescriptor_AssemblyFile> For_LocationDescriptor_AssemblyFile =>
+            For_TypeSpecifiers.TypeSpecifier<ILocationDescriptor, LocationDescriptor_AssemblyFile>.Instance;
+
         public For_TypeSpecifiers.TypeSpecifier<ILocationDescriptor, LocationDescriptor_GitHubRepository> For_LocationDescriptor_GitHubRepository =>
             For_TypeSpecifiers.TypeSpecifier<ILocationDescriptor, LocationDescriptor_GitHubRepository>.Instance;
+
+        public For_TypeSpecifiers.TypeSpecifier<ILocationDescriptor, LocationDescriptor_NugetPackage> For_LocationDescriptor_NugetPackage =>
+            For_TypeSpecifiers.TypeSpecifier<ILocationDescriptor, LocationDescriptor_NugetPackage>.Instance;
 
         public For_TypeSpecifiers.TypeSpecifier<ILocationDescriptor, LocationDescriptor_ProjectFile> For_LocationDescriptor_ProjectFile =>
             For_TypeSpecifiers.TypeSpecifier<ILocationDescriptor, LocationDescriptor_ProjectFile>.Instance;

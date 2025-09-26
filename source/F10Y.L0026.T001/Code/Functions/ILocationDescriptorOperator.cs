@@ -33,6 +33,16 @@ namespace F10Y.L0026.T001
             return output;
         }
 
+        public LocationDescriptor_AssemblyFile From_AssemblyFilePath(string assemblyFilePath)
+        {
+            var output = new LocationDescriptor_AssemblyFile
+            {
+                AssemblyFilePath = assemblyFilePath,
+            };
+
+            return output;
+        }
+
         public LocationDescriptor_ProjectFile From_ProjectFilePath(string projectFilePath)
         {
             var output = new LocationDescriptor_ProjectFile
@@ -60,6 +70,18 @@ namespace F10Y.L0026.T001
         public string To_String(LocationDescriptor_ProjectFile locationDescriptor)
         {
             var output = $"Project: {locationDescriptor.ProjectFilePath}";
+            return output;
+        }
+
+        public string To_String(LocationDescriptor_AssemblyFile locationDescriptor)
+        {
+            var output = $"Assembly: {locationDescriptor.AssemblyFilePath}";
+            return output;
+        }
+
+        public string To_String(LocationDescriptor_NugetPackage locationDescriptor)
+        {
+            var output = $"Nuget: {locationDescriptor.PackageName}/{locationDescriptor.Version}";
             return output;
         }
     }

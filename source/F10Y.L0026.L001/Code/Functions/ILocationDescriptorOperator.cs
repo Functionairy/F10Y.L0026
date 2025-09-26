@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+using F10Y.L0026.T001;
 using F10Y.T0002;
 using F10Y.T0011;
 
@@ -28,7 +29,7 @@ namespace F10Y.L0026.L001
             => Instances.DescriptorTextOperationHandlerSuiteSets.For_LocationDescriptors_ByTypeName;
 
 
-        public LocationDescriptor_Aggregate From_SerializationType(Serialization_LocationDescriptor_Aggregate locationDescriptor)
+        LocationDescriptor_Aggregate From_SerializationType(Serialization_LocationDescriptor_Aggregate locationDescriptor)
         {
             var locationDescriptors = locationDescriptor.LocationDescriptors
                 .Select(this.From_JsonSerializationObject)
@@ -42,7 +43,7 @@ namespace F10Y.L0026.L001
             return output;
         }
 
-        public Serialization_LocationDescriptor_Aggregate To_SerializationType(LocationDescriptor_Aggregate locationDescriptor)
+        Serialization_LocationDescriptor_Aggregate To_SerializationType(LocationDescriptor_Aggregate locationDescriptor)
         {
             var locationDescriptors = locationDescriptor.LocationDescriptors
                 .Select(this.To_JsonSerializationObject)
@@ -56,7 +57,7 @@ namespace F10Y.L0026.L001
             return output;
         }
 
-        public IEnumerable<string> To_Text_ContentOnly(LocationDescriptor_Aggregate locationDescriptor)
+        IEnumerable<string> To_Text_ContentOnly(LocationDescriptor_Aggregate locationDescriptor)
         {
             var count = locationDescriptor.LocationDescriptors.Length;
 
@@ -70,7 +71,7 @@ namespace F10Y.L0026.L001
             return output;
         }
 
-        public IEnumerable<string> To_Text(LocationDescriptor_Aggregate locationDescriptor)
+        IEnumerable<string> To_Text(LocationDescriptor_Aggregate locationDescriptor)
         {
             var lines_ForContent = this.To_Text_ContentOnly(locationDescriptor);
 
@@ -83,7 +84,18 @@ namespace F10Y.L0026.L001
             return output;
         }
 
-        public IEnumerable<string> To_Text_ContentOnly(LocationDescriptor_GitHubRepository locationDescriptor)
+        /// <inheritdoc cref="For_Bases_IDescriptorTextOperator.IDescriptorTextOperator{TDescriptor}.To_Text_AsResult(TDescriptor)" path="/summary"/>
+        /// <remarks>
+        /// Special overload for <see cref="LocationDescriptor_Aggregate"/> to resolve ambiguity between enumerable and instance methods.
+        /// </remarks>
+        For_Results.N003.Result<
+            IEnumerable<string>,
+            For_Results.N002.IFailed<ILocationDescriptor>>
+            To_Text_AsResult(
+            LocationDescriptor_Aggregate descriptor)
+            => this.To_Text_AsResult(descriptor as ILocationDescriptor);
+
+        IEnumerable<string> To_Text_ContentOnly(LocationDescriptor_GitHubRepository locationDescriptor)
         {
             var output = Instances.EnumerableOperator.From($"{locationDescriptor.RepositoryUrl}")
                 .Append(": GitHub repository URL".Entab())
@@ -92,7 +104,7 @@ namespace F10Y.L0026.L001
             return output;
         }
 
-        public IEnumerable<string> To_Text(LocationDescriptor_GitHubRepository locationDescriptor)
+        IEnumerable<string> To_Text(LocationDescriptor_GitHubRepository locationDescriptor)
         {
             var lines_ForContent = this.To_Text_ContentOnly(locationDescriptor);
 
@@ -105,7 +117,7 @@ namespace F10Y.L0026.L001
             return output;
         }
 
-        public IEnumerable<string> To_Text_ContentOnly(LocationDescriptor_ProjectFile locationDescriptor)
+        IEnumerable<string> To_Text_ContentOnly(LocationDescriptor_ProjectFile locationDescriptor)
         {
             var output = Instances.EnumerableOperator.From($"{locationDescriptor.ProjectFilePath}")
                 .Append(": project file path".Entab())
@@ -114,7 +126,54 @@ namespace F10Y.L0026.L001
             return output;
         }
 
-        public IEnumerable<string> To_Text(LocationDescriptor_ProjectFile locationDescriptor)
+        IEnumerable<string> To_Text(LocationDescriptor_ProjectFile locationDescriptor)
+        {
+            var lines_ForContent = this.To_Text_ContentOnly(locationDescriptor);
+
+            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(locationDescriptor);
+
+            var output = Instances.EnumerableOperator.From($"Location Descriptor ({typeName})")
+                .Append_Many(lines_ForContent.Entab())
+                ;
+
+            return output;
+        }
+
+        IEnumerable<string> To_Text_ContentOnly(LocationDescriptor_AssemblyFile locationDescriptor)
+        {
+            var output = Instances.EnumerableOperator.From($"{locationDescriptor.AssemblyFilePath}")
+                .Append(": assembly file path".Entab())
+                ;
+
+            return output;
+        }
+
+        IEnumerable<string> To_Text(LocationDescriptor_AssemblyFile locationDescriptor)
+        {
+            var lines_ForContent = this.To_Text_ContentOnly(locationDescriptor);
+
+            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(locationDescriptor);
+
+            var output = Instances.EnumerableOperator.From($"Location Descriptor ({typeName})")
+                .Append_Many(lines_ForContent.Entab())
+                ;
+
+            return output;
+        }
+
+        IEnumerable<string> To_Text_ContentOnly(LocationDescriptor_NugetPackage locationDescriptor)
+        {
+            var output = Instances.EnumerableOperator.Empty<string>()
+                .Append($"{locationDescriptor.PackageName}")
+                .Append(": package name".Entab())
+                .Append($"{locationDescriptor.Version}")
+                .Append(": version".Entab())
+                ;
+
+            return output;
+        }
+
+        IEnumerable<string> To_Text(LocationDescriptor_NugetPackage locationDescriptor)
         {
             var lines_ForContent = this.To_Text_ContentOnly(locationDescriptor);
 

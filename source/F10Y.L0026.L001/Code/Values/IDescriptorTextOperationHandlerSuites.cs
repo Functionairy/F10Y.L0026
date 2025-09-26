@@ -1,5 +1,6 @@
 using System;
 
+using F10Y.L0026.T001;
 using F10Y.T0003;
 
 
@@ -304,6 +305,19 @@ namespace F10Y.L0026.L001
             )
         };
 
+        public For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<ILocationDescriptor> For_LocationDescriptor_AssemblyFile => new()
+        {
+            Type = Instances.TypeOperator.Get_Type<LocationDescriptor_AssemblyFile>(),
+            To_Text = Instances.TypeOperator.Get_Operator_WithInputTypeVerified(
+                Instances.LocationDescriptorOperator.To_Text,
+                Instances.TypeSpecifiers.For_LocationDescriptor_AssemblyFile),
+            To_Text_ContentOnly = Instances.TypeOperator.Get_Operator_WithInputTypeVerified(
+                Instances.LocationDescriptorOperator.To_Text_ContentOnly,
+                Instances.TypeSpecifiers.For_LocationDescriptor_AssemblyFile),
+            From_JsonElement = Instances.JsonElementOperator.Deserialize<LocationDescriptor_AssemblyFile>,
+            To_JsonElement = Instances.JsonElementOperator.Serialize
+        };
+
         public For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<ILocationDescriptor> For_LocationDescriptor_GitHubRepository => new()
         {
             Type = Instances.TypeOperator.Get_Type<LocationDescriptor_GitHubRepository>(),
@@ -314,6 +328,19 @@ namespace F10Y.L0026.L001
                 Instances.LocationDescriptorOperator.To_Text_ContentOnly,
                 Instances.TypeSpecifiers.For_LocationDescriptor_GitHubRepository),
             From_JsonElement = Instances.JsonElementOperator.Deserialize<LocationDescriptor_GitHubRepository>,
+            To_JsonElement = Instances.JsonElementOperator.Serialize
+        };
+
+        public For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<ILocationDescriptor> For_LocationDescriptor_NugetPackage => new()
+        {
+            Type = Instances.TypeOperator.Get_Type<LocationDescriptor_NugetPackage>(),
+            To_Text = Instances.TypeOperator.Get_Operator_WithInputTypeVerified(
+                Instances.LocationDescriptorOperator.To_Text,
+                Instances.TypeSpecifiers.For_LocationDescriptor_NugetPackage),
+            To_Text_ContentOnly = Instances.TypeOperator.Get_Operator_WithInputTypeVerified(
+                Instances.LocationDescriptorOperator.To_Text_ContentOnly,
+                Instances.TypeSpecifiers.For_LocationDescriptor_NugetPackage),
+            From_JsonElement = Instances.JsonElementOperator.Deserialize<LocationDescriptor_NugetPackage>,
             To_JsonElement = Instances.JsonElementOperator.Serialize
         };
 

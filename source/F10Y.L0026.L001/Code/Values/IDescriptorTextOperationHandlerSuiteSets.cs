@@ -161,7 +161,9 @@ namespace F10Y.L0026.L001
         public For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<ILocationDescriptor>[] For_LocationDescriptors => new[]
         {
             _DescriptorTextOperationHandlerSuites.For_LocationDescriptor_Aggregate,
+            _DescriptorTextOperationHandlerSuites.For_LocationDescriptor_AssemblyFile,
             _DescriptorTextOperationHandlerSuites.For_LocationDescriptor_GitHubRepository,
+            _DescriptorTextOperationHandlerSuites.For_LocationDescriptor_NugetPackage,
             _DescriptorTextOperationHandlerSuites.For_LocationDescriptor_ProjectFile,
         };
 

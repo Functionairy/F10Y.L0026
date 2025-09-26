@@ -19,6 +19,7 @@ global using IWith_RepositoryUrl = F10Y.L0026.T000.IWith_RepositoryUrl;
 global using IWith_TargetFrameworkMoniker = F10Y.L0008.T001.IWith_TargetFrameworkMoniker;
 global using IWith_TypingScheme = F10Y.L0026.T000.IWith_TypingScheme;
 global using IWith_Version_AsString = F10Y.L0026.T000.N001.IWith_Version;
+global using IWith_Version_AsVersion = F10Y.L0026.T000.N000.IWith_Version;
 global using IWith_Visibility = F10Y.L0005.T001.IWith_Visibility;
 
 global using ImplementationScheme = F10Y.L0026.T000.ImplementationScheme;
