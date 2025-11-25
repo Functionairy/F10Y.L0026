@@ -266,7 +266,7 @@ namespace F10Y.L0026.L004
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceVarietySearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceVarietySearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceVarietySearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Variety Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -300,7 +300,7 @@ namespace F10Y.L0026.L004
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceVarietySearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceVarietySearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceVarietySearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Variety Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())

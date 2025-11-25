@@ -22,6 +22,8 @@ global using IWith_Version_AsString = F10Y.L0026.T000.N001.IWith_Version;
 global using IWith_Version_AsVersion = F10Y.L0026.T000.N000.IWith_Version;
 global using IWith_Visibility = F10Y.L0005.T001.IWith_Visibility;
 
+global using ILocationDescriptor = F10Y.L0026.T006.ILocationDescriptor;
+
 global using ImplementationScheme = F10Y.L0026.T000.ImplementationScheme;
 global using JsonSerializationObject = F10Y.L0062.L001.T000.JsonSerializationObject;
 global using NamingScheme = F10Y.L0026.T000.NamingScheme;

@@ -88,7 +88,7 @@ namespace F10Y.L0026.L002
         {
             var lines_ForContent = this.To_Text_ContentOnly(opinionSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(opinionSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(opinionSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Opinion Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())

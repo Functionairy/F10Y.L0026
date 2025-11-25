@@ -91,7 +91,7 @@ namespace F10Y.L0026
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetFlow);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetFlow);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetFlow);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Flow ({typeName})")
                 .Append_Many(lines_ForContent.Entab())

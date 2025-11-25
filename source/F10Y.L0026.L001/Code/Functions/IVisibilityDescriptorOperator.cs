@@ -88,7 +88,7 @@ namespace F10Y.L0026.L001
         {
             var lines_ForContent = this.To_Text_ContentOnly(visibilityDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(visibilityDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(visibilityDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Visibility Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())

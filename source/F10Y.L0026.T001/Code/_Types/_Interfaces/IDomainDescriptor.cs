@@ -11,7 +11,7 @@ namespace F10Y.L0026.T001
     /// <remarks>
     /// Domain can be all, a specific value (like Octokit), or a set of values.
     /// <para>
-    /// Applicability is one of the "arbitary" descriptors of an instances set.
+    /// Domain is one of the "arbitary" descriptors of an instances set.
     /// </para>
     /// <para><inheritdoc cref="Documentation_InstanceSet.ArbitraryDescriptorRemarks_ForInstanceSet" path="/remarks"/></para>
     /// <para><inheritdoc cref="Documentation_Common.EmptyInterfaceAsPlaceholder" path="/remarks"/></para>

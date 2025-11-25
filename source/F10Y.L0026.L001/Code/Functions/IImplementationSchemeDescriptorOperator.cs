@@ -58,7 +58,7 @@ namespace F10Y.L0026.L001
         {
             var lines_ForContent = this.To_Text_ContentOnly(implementationSchemeDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(implementationSchemeDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(implementationSchemeDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Implementation Scheme Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())

@@ -166,7 +166,7 @@ namespace F10Y.L0026.L002
         {
             var lines_ForContent = this.To_Text_ContentOnly(domainSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(domainSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(domainSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Domain Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -194,7 +194,7 @@ namespace F10Y.L0026.L002
         {
             var lines_ForContent = this.To_Text_ContentOnly(domainSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(domainSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(domainSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Domain Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())

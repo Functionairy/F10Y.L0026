@@ -21,7 +21,7 @@ global using IInstanceSetLocationDescriptor = F10Y.L0026.T003.IInstanceSetLocati
 global using IInstanceSetTypeDescriptor = F10Y.L0026.T003.IInstanceSetTypeDescriptor;
 global using IInstanceVarietyDescriptor = F10Y.L0026.T003.IInstanceVarietyDescriptor;
 global using IImplementationSchemeDescriptor = F10Y.L0026.T001.IImplementationSchemeDescriptor;
-global using ILocationDescriptor = F10Y.L0026.T001.ILocationDescriptor;
+global using ILocationDescriptor = F10Y.L0026.T006.ILocationDescriptor;
 global using INamingSchemeDescriptor = F10Y.L0026.T001.INamingSchemeDescriptor;
 global using ITypingSchemeDescriptor = F10Y.L0026.T001.ITypingSchemeDescriptor;
 

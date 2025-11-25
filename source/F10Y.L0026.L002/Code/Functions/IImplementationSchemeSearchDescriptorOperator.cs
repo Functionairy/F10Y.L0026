@@ -92,7 +92,7 @@ namespace F10Y.L0026.L002
         {
             var lines_ForContent = this.To_Text_ContentOnly(implementationSchemeSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(implementationSchemeSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(implementationSchemeSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Implementation Scheme Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())

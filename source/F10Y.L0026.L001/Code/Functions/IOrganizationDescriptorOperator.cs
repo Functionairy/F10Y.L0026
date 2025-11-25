@@ -126,7 +126,7 @@ namespace F10Y.L0026.L001
         {
             var lines_ForContent = this.To_Text_ContentOnly(organizationDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(organizationDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(organizationDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Organization Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())

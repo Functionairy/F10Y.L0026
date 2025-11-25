@@ -48,7 +48,7 @@ namespace F10Y.L0026.L003
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetTypeDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetTypeDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetTypeDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Type Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())

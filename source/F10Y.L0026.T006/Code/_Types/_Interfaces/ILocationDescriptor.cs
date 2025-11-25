@@ -3,7 +3,7 @@
 using F10Y.T0004;
 
 
-namespace F10Y.L0026.T001
+namespace F10Y.L0026.T006
 {
     /// <summary>
     /// A general location descriptor.

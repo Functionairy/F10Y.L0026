@@ -315,7 +315,7 @@ namespace F10Y.L0026.L003
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -353,7 +353,7 @@ namespace F10Y.L0026.L003
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -391,7 +391,7 @@ namespace F10Y.L0026.L003
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())

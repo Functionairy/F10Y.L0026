@@ -7,6 +7,7 @@ namespace F10Y.L0026.L001
     {
         public static IApplicabilityDescriptorOperator ApplicabilityDescriptorOperator => L001.ApplicabilityDescriptorOperator.Instance;
         public static L0000.IArrayOperator ArrayOperator => L0000.ArrayOperator.Instance;
+        public static L0000.IDefaultOperator DefaultOperator => L0000.DefaultOperator.Instance;
         public static IDescriptorTextOperationHandlerSuites DescriptorTextOperationHandlerSuites => L001.DescriptorTextOperationHandlerSuites.Instance;
         public static IDescriptorTextOperationHandlerSuiteSets DescriptorTextOperationHandlerSuiteSets => L001.DescriptorTextOperationHandlerSuiteSets.Instance;
         public static IDependencyDescriptorOperator DependencyDescriptorOperator => L001.DependencyDescriptorOperator.Instance;

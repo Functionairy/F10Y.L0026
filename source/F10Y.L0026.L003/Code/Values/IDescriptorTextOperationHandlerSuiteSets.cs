@@ -19,12 +19,12 @@ namespace F10Y.L0026.L003
 
         #region Instance Set Descriptors
 
-        public For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<IInstanceSetDescriptor>[] For_InstanceSetDescriptors => new[]
-        {
+        public For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<IInstanceSetDescriptor>[] For_InstanceSetDescriptors =>
+        [
             _DescriptorTextOperationHandlerSuites.For_InstanceSetDescriptor,
             _DescriptorTextOperationHandlerSuites.For_InstanceSetDescriptor_CatchAllLibrary,
             _DescriptorTextOperationHandlerSuites.For_InstanceSetDescriptor_EntryPointExecutable,
-        };
+        ];
 
         private static readonly Lazy<Dictionary<Type, For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<IInstanceSetDescriptor>>> For_InstanceSetDescriptors_ByType_Lazy = new(() =>
             DescriptorTextOperationHandlerSuiteSets.Instance.For_InstanceSetDescriptors
@@ -46,8 +46,8 @@ namespace F10Y.L0026.L003
 
         #region Instance Set Flow Descriptors
 
-        public For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<IInstanceSetFlowDescriptor>[] For_InstanceSetFlowDescriptors => new[]
-        {
+        public For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<IInstanceSetFlowDescriptor>[] For_InstanceSetFlowDescriptors =>
+        [
             _DescriptorTextOperationHandlerSuites.For_InstanceSetFlowDescriptor_Aggregate,
             _DescriptorTextOperationHandlerSuites.For_InstanceSetFlowDescriptor_Contribute,
             _DescriptorTextOperationHandlerSuites.For_InstanceSetFlowDescriptor_Deprecate,
@@ -56,7 +56,7 @@ namespace F10Y.L0026.L003
             _DescriptorTextOperationHandlerSuites.For_InstanceSetFlowDescriptor_NetVersion_Choose,
             _DescriptorTextOperationHandlerSuites.For_InstanceSetFlowDescriptor_Port,
             _DescriptorTextOperationHandlerSuites.For_InstanceSetFlowDescriptor_Publicize
-        };
+        ];
 
         private static readonly Lazy<Dictionary<Type, For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<IInstanceSetFlowDescriptor>>> For_InstanceSetFlowDescriptors_ByType_Lazy = new(() =>
             DescriptorTextOperationHandlerSuiteSets.Instance.For_InstanceSetFlowDescriptors
@@ -78,10 +78,10 @@ namespace F10Y.L0026.L003
 
         #region Instance Set Location Descriptors
 
-        public For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<IInstanceSetLocationDescriptor>[] For_InstanceSetLocationDescriptors => new[]
-        {
+        public For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<IInstanceSetLocationDescriptor>[] For_InstanceSetLocationDescriptors =>
+        [
             _DescriptorTextOperationHandlerSuites.For_InstanceSetLocationDescriptor
-        };
+        ];
 
         private static readonly Lazy<Dictionary<Type, For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<IInstanceSetLocationDescriptor>>> For_InstanceSetLocationDescriptors_ByType_Lazy = new(() =>
             DescriptorTextOperationHandlerSuiteSets.Instance.For_InstanceSetLocationDescriptors
@@ -103,10 +103,10 @@ namespace F10Y.L0026.L003
 
         #region Instance Set Type Descriptors
 
-        public For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<IInstanceSetTypeDescriptor>[] For_InstanceSetTypeDescriptors => new[]
-        {
+        public For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<IInstanceSetTypeDescriptor>[] For_InstanceSetTypeDescriptors =>
+        [
             _DescriptorTextOperationHandlerSuites.For_InstanceSetTypeDescriptor_Name
-        };
+        ];
 
         private static readonly Lazy<Dictionary<Type, For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<IInstanceSetTypeDescriptor>>> For_InstanceSetTypeDescriptors_ByType_Lazy = new(() =>
             DescriptorTextOperationHandlerSuiteSets.Instance.For_InstanceSetTypeDescriptors
@@ -128,14 +128,14 @@ namespace F10Y.L0026.L003
 
         #region Instance Variety Descriptors
 
-        public For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<IInstanceVarietyDescriptor>[] For_InstanceVarietyDescriptors => new[]
-        {
+        public For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<IInstanceVarietyDescriptor>[] For_InstanceVarietyDescriptors =>
+        [
             _DescriptorTextOperationHandlerSuites.For_InstanceVarietyDescriptor_All,
             _DescriptorTextOperationHandlerSuites.For_InstanceVarietyDescriptor_Aggregate,
             _DescriptorTextOperationHandlerSuites.For_InstanceVarietyDescriptor_Name,
             _DescriptorTextOperationHandlerSuites.For_InstanceVarietyDescriptor_Name_Set,
             _DescriptorTextOperationHandlerSuites.For_InstanceVarietyDescriptor_Values,
-        };
+        ];
 
         private static readonly Lazy<Dictionary<Type, For_DescriptorTextOperationHandlerSuite.DescriptorTextOperationHandlerSuite<IInstanceVarietyDescriptor>>> For_InstanceVarietyDescriptors_ByType_Lazy = new(() =>
             DescriptorTextOperationHandlerSuiteSets.Instance.For_InstanceVarietyDescriptors

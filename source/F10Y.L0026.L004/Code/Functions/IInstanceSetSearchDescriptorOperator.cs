@@ -585,7 +585,7 @@ namespace F10Y.L0026.L004
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -620,7 +620,7 @@ namespace F10Y.L0026.L004
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -659,7 +659,7 @@ namespace F10Y.L0026.L004
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -703,7 +703,7 @@ namespace F10Y.L0026.L004
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -736,7 +736,7 @@ namespace F10Y.L0026.L004
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -749,7 +749,7 @@ namespace F10Y.L0026.L004
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -782,7 +782,7 @@ namespace F10Y.L0026.L004
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -810,7 +810,7 @@ namespace F10Y.L0026.L004
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -843,7 +843,7 @@ namespace F10Y.L0026.L004
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -876,7 +876,7 @@ namespace F10Y.L0026.L004
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -909,7 +909,7 @@ namespace F10Y.L0026.L004
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -942,7 +942,7 @@ namespace F10Y.L0026.L004
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -975,7 +975,7 @@ namespace F10Y.L0026.L004
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -1008,7 +1008,7 @@ namespace F10Y.L0026.L004
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -1401,7 +1401,7 @@ namespace F10Y.L0026.L004
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())

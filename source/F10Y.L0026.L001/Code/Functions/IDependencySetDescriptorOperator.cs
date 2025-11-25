@@ -69,7 +69,7 @@ namespace F10Y.L0026.L001
         {
             var lines_ForContent = this.To_Text_ContentOnly(dependencySetDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(dependencySetDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(dependencySetDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Dependency Set Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -90,7 +90,7 @@ namespace F10Y.L0026.L001
         {
             var lines_ForContent = this.To_Text_ContentOnly(dependencySetDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(dependencySetDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(dependencySetDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Dependency Set Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -111,7 +111,7 @@ namespace F10Y.L0026.L001
         {
             var lines_ForContent = this.To_Text_ContentOnly(dependencySetDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(dependencySetDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(dependencySetDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Dependency Set Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -132,7 +132,7 @@ namespace F10Y.L0026.L001
         {
             var lines_ForContent = this.To_Text_ContentOnly(dependencySetDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(dependencySetDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(dependencySetDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Dependency Set Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -153,7 +153,7 @@ namespace F10Y.L0026.L001
         {
             var lines_ForContent = this.To_Text_ContentOnly(dependencySetDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(dependencySetDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(dependencySetDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Dependency Set Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())

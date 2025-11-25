@@ -4,7 +4,6 @@ global using IDependencyDescriptor = F10Y.L0026.T001.IDependencyDescriptor;
 global using IDependencySetDescriptor = F10Y.L0026.T001.IDependencySetDescriptor;
 global using IDomainDescriptor = F10Y.L0026.T001.IDomainDescriptor;
 global using IImplementationSchemeDescriptor = F10Y.L0026.T001.IImplementationSchemeDescriptor;
-global using ILocationDescriptor = F10Y.L0026.T001.ILocationDescriptor;
 global using INamingSchemeDescriptor = F10Y.L0026.T001.INamingSchemeDescriptor;
 global using INetVersionDescriptor = F10Y.L0026.T001.INetVersionDescriptor;
 global using IOpinionDescriptor = F10Y.L0026.T001.IOpinionDescriptor;

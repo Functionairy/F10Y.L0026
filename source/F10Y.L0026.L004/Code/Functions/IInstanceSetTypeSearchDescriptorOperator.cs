@@ -102,7 +102,7 @@ namespace F10Y.L0026.L004
         {
             var lines_ForContent = this.To_Text_ContentOnly(instanceSetTypeSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(instanceSetTypeSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(instanceSetTypeSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Type Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())

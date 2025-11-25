@@ -72,7 +72,7 @@ namespace F10Y.L0026.L003
         {
             var lines_ForContent = this.To_Text_ContentOnly(aggregateDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(aggregateDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(aggregateDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Flow Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -93,7 +93,7 @@ namespace F10Y.L0026.L003
         {
             var lines_ForContent = this.To_Text_ContentOnly(contributeDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(contributeDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(contributeDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Flow Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -114,7 +114,7 @@ namespace F10Y.L0026.L003
         {
             var lines_ForContent = this.To_Text_ContentOnly(deprecateDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(deprecateDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(deprecateDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Flow Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -135,7 +135,7 @@ namespace F10Y.L0026.L003
         {
             var lines_ForContent = this.To_Text_ContentOnly(librarateDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(librarateDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(librarateDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Flow Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -158,7 +158,7 @@ namespace F10Y.L0026.L003
         {
             var lines_ForContent = this.To_Text_ContentOnly(netVersionChangeDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(netVersionChangeDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(netVersionChangeDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Flow Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -179,7 +179,7 @@ namespace F10Y.L0026.L003
         {
             var lines_ForContent = this.To_Text_ContentOnly(netVersionChooseDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(netVersionChooseDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(netVersionChooseDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Flow Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -200,7 +200,7 @@ namespace F10Y.L0026.L003
         {
             var lines_ForContent = this.To_Text_ContentOnly(portDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(portDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(portDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Flow Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
@@ -221,7 +221,7 @@ namespace F10Y.L0026.L003
         {
             var lines_ForContent = this.To_Text_ContentOnly(publicizeDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(publicizeDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(publicizeDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Instance Set Flow Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())

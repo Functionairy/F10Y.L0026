@@ -103,7 +103,7 @@ namespace F10Y.L0026.L002
         {
             var lines_ForContent = this.To_Text_ContentOnly(organizationSearchDescriptor);
 
-            var typeName = Instances.TypeNameOperator.Get_TypeNameOf_DeclaredType(organizationSearchDescriptor);
+            var typeName = Instances.TypeNameOperator.Get_TypeName_OfDeclaredType(organizationSearchDescriptor);
 
             var output = Instances.EnumerableOperator.From($"Organization Search Descriptor ({typeName})")
                 .Append_Many(lines_ForContent.Entab())
